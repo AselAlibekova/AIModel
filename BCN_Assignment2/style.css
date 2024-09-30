@@ -1,0 +1,98 @@
+/* Темный фон страницы */
+body {
+    background-color: #2e2e2e;
+    color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стиль контейнера */
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовки */
+h1, h2 {
+    color: #f1f1f1;
+    border-bottom: 2px solid #565656;
+    padding-bottom: 10px;
+}
+
+/* Поля ввода */
+input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #444444;
+    color: #f5f5f5;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder, input[type="number"]::placeholder {
+    color: #b3b3b3;
+}
+
+/* Стили кнопок */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #565656;
+    color: #ffffff;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #777777;
+}
+
+/* Список моделей */
+#modelsList {
+    background-color: #444444;
+    padding: 10px;
+    border: 1px solid #666666;
+    border-radius: 5px;
+}
+
+/* Дополнительные отступы для элементов */
+input, button {
+    margin-bottom: 15px;
+}
+input[type="text"],
+input[type="number"] {
+    width: 90%; /* Устанавливаем ширину в процентах от родительского контейнера */
+    margin: 5px auto; /* Добавляем отступы сверху/снизу */
+    display: block; /* Чтобы элементы находились друг под другом */
+    padding: 10px; /* Отступы внутри полей */
+    border-radius: 5px; /* Округляем углы полей */
+    border: 1px solid #ccc; /* Цвет границы */
+    background-color: #444; /* Фон поля для темного стиля */
+    color: white; /* Цвет текста */
+}
+
+button {
+    width: 95%; /* Ширина кнопки также уменьшается для соответствия полям ввода */
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    background-color: #555; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    border: none; /* Убираем границу */
+    border-radius: 5px; /* Округляем углы кнопки */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #666; /* Изменение цвета кнопки при наведении */
+}

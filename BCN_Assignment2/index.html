@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AI Model Marketplace</title>
+</head>
+<body>
+    <div id="app">
+        <h1>AI Model Marketplace</h1>
+
+        <h2>List New Model</h2>
+        <input type="text" id="modelName" placeholder="Model Name">
+        <input type="text" id="modelDescription" placeholder="Model Description">
+        <input type="number" id="modelPrice" placeholder="Model Price">
+        <button onclick="listModel()">List Model</button>
+
+    
+        <h2>Rate Model</h2>
+        <input type="number" id="modelIdToRate" placeholder="Model ID">
+        <input type="number" id="modelRating" placeholder="Rating (1-5)">
+        <button onclick="rateModel()">Rate Model</button>
+
+        <h2>Withdraw Funds</h2>
+        <button onclick="withdrawFunds()">Withdraw</button>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
